@@ -1,5 +1,10 @@
-/* font only for name */
+/* font for headings */
+
+/* first font choice */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+/* second font choice */
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 
 /* font for body */
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400&display=swap');
@@ -16,14 +21,17 @@ body {
 
 h1 {
     margin: 0;
-    font-family: 'Patrick Hand SC', cursive;
+    font-family: 'Delius', cursive;
     font-size: 6em;
+}
+
+p {
+    font-size: 1.5em;
 }
 
 /* modifying text */
 .gamer {
     text-decoration: underline;
-
 }
 
 .top-container {
@@ -35,7 +43,8 @@ h1 {
 }
 
 .top-content-container {
-    margin: 100px auto;
+    margin: 0 auto;
+    padding-top: 100px;
     width: 50%;
 }
 
@@ -59,11 +68,11 @@ h1 {
     background-color: #000;
 }
 
-.work-container h2 {
+.work-container p {
     background-color: #fff;
 }
 
-.work-container h2 {
+.work-container p {
     margin: 0;
     padding: 25px 12.5px 25px 0;
 }
