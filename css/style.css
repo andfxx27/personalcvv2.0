@@ -20,6 +20,12 @@ h1 {
     font-size: 6em;
 }
 
+/* modifying text */
+.gamer {
+    text-decoration: underline;
+
+}
+
 .top-container {
     /* sets the background color */
     background-color: #fff;
@@ -41,8 +47,9 @@ h1 {
 }
 
 .work-container {
-    border: 0.5px solid #ccc;
-    color: #000;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #131313;
     margin: 0 0 0 20%;
     text-align: right;
     width: 36%;
