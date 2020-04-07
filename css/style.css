@@ -1,0 +1,74 @@
+/* font only for name */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+/* font for body */
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 6em;
+}
+
+.top-container {
+    /* sets the background color */
+    background-color: #fff;
+
+    /* fills the entire screen */
+    height: 100vh;
+}
+
+.top-content-container {
+    margin: 100px auto;
+    width: 50%;
+}
+
+.name-container {
+    color: #fff;
+    text-align: left;
+    width: 60%;
+    margin: 0 0 0 30%;
+}
+
+.work-container {
+    border: 0.5px solid #ccc;
+    color: #000;
+    margin: 0 0 0 20%;
+    text-align: right;
+    width: 36%;
+}
+
+.name-container h1 {
+    background-color: #000;
+}
+
+.work-container h2 {
+    background-color: #fff;
+}
+
+.work-container h2 {
+    margin: 0;
+    padding: 25px 12.5px 25px 0;
+}
+
+.middle-container {
+    background-color: aliceblue;
+    width: 100%;
+    height: 200px;
+}
+
+.bottom-container {
+    background-color: aquamarine;
+    width: 100%;
+    height: 200px;
+}
