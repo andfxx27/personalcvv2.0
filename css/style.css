@@ -113,6 +113,13 @@ p {
     max-width: 7.5%;
 }
 
+.small-up-arrow {
+    max-width: 48px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
 .top-container {
     /* sets the background color */
     background-color: #fff;
@@ -196,6 +203,7 @@ p {
 .bottom-container {
     background-color: aquamarine;
     width: 100%;
+    position: relative;
 }
 
 .contacts-container {
@@ -228,3 +236,5 @@ p {
     color: #141414;
     transition-duration: 0.5s;
 }
+
+/* media queries */
