@@ -1,5 +1,4 @@
 /* font for headings */
-
 /* first font choice */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
 
@@ -9,6 +8,7 @@
 /* font for body */
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
+/* global element configuration */
 * {
     box-sizing: border-box;
 }
@@ -19,10 +19,40 @@ body {
     font-family: 'Inria Sans', sans-serif;
 }
 
+figure {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 50px 25px;
+    text-align: center;
+}
+
+hr {
+    border-style: none;
+    border-top: 10px dotted #131313;
+    margin: 100px auto;
+    width: 15%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
     margin: 0;
-    font-family: 'Delius', cursive;
+    font-family: 'Patrick Hand SC', cursive;
     font-size: 6em;
+}
+
+h2 {
+    font-size: 4.5em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+img {
+    display: inline-block;
 }
 
 p {
@@ -34,18 +64,61 @@ p {
     text-decoration: underline;
 }
 
+.self-description {
+    font-size: 1.25em;
+    margin-bottom: 0;
+    padding: 50px 25px;
+    text-align: center;
+}
+
+/* modifying image */
+.icon-image {
+    border-radius: 50%;
+    max-width: 25%;
+}
+
+.portrait-image {
+    border-radius: 50%;
+    max-width: 75%;
+}
+
+.skill-image-scale {
+    /* resize the image by its own size */
+    /* safari 3.1+, chrome */
+    -webkit-transform: scale(0.25);
+
+    /* FireFox 3.5+ */
+    -moz-transform: scale(0.25);
+
+    /* IE9+ */
+    -ms-transform: scale(0.25);
+
+    /* Opera 10.5+ */
+    -o-transform: scale(0.25);
+
+    transform: scale(0.25);
+}
+
+.skill-image-static {
+    width: 128px;
+    height: 128px;
+}
+
+.small-icon-image {
+    max-width: 7.5%;
+}
+
 .top-container {
     /* sets the background color */
     background-color: #fff;
 
-    /* fills the entire screen */
-    height: 100vh;
+    /* fills the entire screen with 100vh */
 }
 
 .top-content-container {
     margin: 0 auto;
     padding-top: 100px;
-    width: 50%;
+    width: 60%;
 }
 
 .name-container {
@@ -77,10 +150,36 @@ p {
     padding: 25px 12.5px 25px 0;
 }
 
+.arrow-container {
+    margin: 250px auto 50px auto;
+    text-align: center;
+}
+
 .middle-container {
-    background-color: aliceblue;
     width: 100%;
-    height: 200px;
+}
+
+.middle-content-container {
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+}
+
+.image-container {
+    display: inline-block;
+}
+
+/* flexbox container */
+.skill-container {
+    display: flex;
+    /* laid out flex item as row */
+    flex-direction: row;
+}
+
+.skill-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .bottom-container {
