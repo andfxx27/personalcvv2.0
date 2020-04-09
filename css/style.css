@@ -67,6 +67,7 @@ p {
 
 .gamer {
     background-color: #000;
+    display: inline-block;
     color: #fff;
 }
 
