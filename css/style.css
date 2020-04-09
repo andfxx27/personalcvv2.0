@@ -44,7 +44,7 @@ h1 {
 }
 
 h2 {
-    font-size: 4.5em;
+    font-size: 4em;
 }
 
 h3 {
@@ -60,6 +60,11 @@ p {
 }
 
 /* modifying text */
+.copyright-text {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
 .gamer {
     text-decoration: underline;
 }
@@ -138,7 +143,7 @@ p {
 }
 
 .name-container h1 {
-    background-color: #000;
+    background-color: #181818;
 }
 
 .work-container p {
@@ -174,16 +179,52 @@ p {
     display: flex;
     /* laid out flex item as row */
     flex-direction: row;
+    padding: 50px 0;
 }
 
 .skill-description-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 0 25px;
+}
+
+.skill-description-container p {
+    font-size: 1.25em;
 }
 
 .bottom-container {
     background-color: aquamarine;
     width: 100%;
-    height: 200px;
+}
+
+.contacts-container {
+    margin: 0 auto;
+    padding: 50px 25px 25px 25px;
+    text-align: center;
+    width: 50%;
+}
+
+.contacts-container ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.contacts-container ul li {
+    display: inline-block;
+    padding: 25px 12.5px 50px 12.5px;
+    font-size: 1.25em;
+}
+
+.contacts-container ul li a:link,
+.contacts-container ul li a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #525252;
+}
+
+.contacts-container ul li a:hover {
+    color: #141414;
+    transition-duration: 0.5s;
 }
