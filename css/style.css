@@ -51,6 +51,11 @@ h3 {
     font-size: 2.5em;
 }
 
+nav {
+    margin: 0 auto;
+    width: 50%;
+}
+
 img {
     display: inline-block;
 }
@@ -121,6 +126,26 @@ p {
     bottom: 25px;
     right: 25px;
 }
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a:link,
+header nav ul li a:visited {
+    color: #525252;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 
 .top-container {
     /* sets the background color */
@@ -234,9 +259,64 @@ p {
     color: #525252;
 }
 
-.contacts-container ul li a:hover {
+.contacts-container ul li a:hover,
+header nav ul li a:hover {
     color: #141414;
     transition-duration: 0.5s;
 }
 
 /* media queries */
+/* only apply if screen is <= 768px */
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    h2 {
+        font-size: 3em;
+        margin: 32px 0;
+    }
+
+    h3 {
+        font-size: 2em;
+        margin: 16px 0;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        padding: 12.5px;
+    }
+
+    .top-content-container,
+    .middle-content-container {
+        width: 100%;
+    }
+
+    .skill-container {
+        flex-direction: column;
+        padding: 25px 0;
+    }
+}
+
+/* only apply if screen is > 768px and <= 824px */
+@media screen and (min-width: 769px) and (max-width: 824px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    p {
+        font-size: 1.25em;
+    }
+}
