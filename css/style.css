@@ -157,7 +157,8 @@ header nav ul li a:visited {
 .top-content-container {
     margin: 0 auto;
     padding-top: 100px;
-    width: 60%;
+    /* substitude width for 60% of total width */
+    max-width: 920px;
 }
 
 .name-container {
@@ -201,7 +202,8 @@ header nav ul li a:visited {
 .middle-content-container {
     margin: 0 auto;
     text-align: center;
-    width: 60%;
+    /* substitute width for 60% of total width (0.6 * 1536px) */
+    max-width: 920px;
 }
 
 .image-container {
@@ -229,7 +231,9 @@ header nav ul li a:visited {
 
 .bottom-container {
     background-color: aquamarine;
-    width: 100%;
+    margin: 0 auto;
+    /* substitute width for 100% of total width (1536px) */
+    max-width: 1536px;
     position: relative;
 }
 
