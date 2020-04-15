@@ -28,7 +28,7 @@ figure {
 
 hr {
     border-style: none;
-    border-top: 10px dotted #131313;
+    border-top: 10px dotted rgb(26, 26, 26, 0.1);
     margin: 100px auto;
     width: 15%;
 }
@@ -118,7 +118,11 @@ p {
 
 .small-icon-image {
     max-width: 7.5%;
+    animation: bouncy 1s infinite;
 }
+
+/* animation keyframe */
+
 
 .small-up-arrow {
     max-width: 48px;
@@ -166,6 +170,9 @@ header nav ul li a:visited {
     text-align: left;
     width: 60%;
     margin: 0 0 0 30%;
+
+    /* animation properties */
+    animation: moveInFromLeft 1s ease-out;
 }
 
 .work-container {
@@ -175,6 +182,41 @@ header nav ul li a:visited {
     margin: 0 0 0 20%;
     text-align: right;
     width: 36%;
+
+    /* animation properties */
+    animation: moveInFromRight 1s ease-out;
+}
+
+@keyframes moveInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    75% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    75% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .name-container h1 {
